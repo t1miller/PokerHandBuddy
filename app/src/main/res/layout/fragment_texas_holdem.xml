@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pullToRefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/red_felt_background" >
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cardLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:padding="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@drawable/border_background"
+                    >
+
+                        <TextView
+                            style="@style/TitleSmallGameType"
+                            android:id="@+id/communityTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toTopOf="@id/card1"
+                            android:text="@string/community_cards" />
+
+                        <ImageView
+                            android:id="@+id/card1"
+                            android:layout_width="70dp"
+                            android:layout_height="95dp"
+                            android:background="@drawable/card_selected"
+                            android:src="@drawable/card_back_default"
+                            android:contentDescription="@string/poker_card_placeholder"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/card2"
+                            app:layout_constraintTop_toBottomOf="@id/communityTitle"
+                            />
+
+                        <ImageView
+                            android:id="@+id/card2"
+                            android:layout_width="70dp"
+                            android:layout_height="95dp"
+                            android:background="@drawable/card_selected"
+                            android:src="@drawable/card_back_default"
+                            android:contentDescription="@string/poker_card_placeholder"
+                            app:layout_constraintStart_toEndOf="@id/card1"
+                            app:layout_constraintTop_toBottomOf="@id/communityTitle"
+                            />
+
+                        <ImageView
+                            android:id="@+id/card3"
+                            android:layout_width="70dp"
+                            android:layout_height="95dp"
+                            android:background="@drawable/card_selected"
+                            android:src="@drawable/card_back_default"
+                            android:contentDescription="@string/poker_card_placeholder"
+                            app:layout_constraintStart_toEndOf="@id/card2"
+                            app:layout_constraintTop_toBottomOf="@id/communityTitle"
+                            />
+
+                        <ImageView
+                            android:id="@+id/card4"
+                            android:layout_width="70dp"
+                            android:layout_height="95dp"
+                            android:background="@drawable/card_selected"
+                            android:src="@drawable/card_back_default"
+                            android:contentDescription="@string/poker_card_placeholder"
+                            app:layout_constraintStart_toEndOf="@id/card3"
+                            app:layout_constraintTop_toBottomOf="@id/communityTitle"
+                            />
+
+                        <ImageView
+                            android:id="@+id/card5"
+                            android:layout_width="70dp"
+                            android:layout_height="95dp"
+                            android:background="@drawable/card_selected"
+                            android:src="@drawable/card_back_default"
+                            android:contentDescription="@string/poker_card_placeholder"
+                            app:layout_constraintStart_toEndOf="@id/card4"
+                            app:layout_constraintTop_toBottomOf="@id/communityTitle"
+                            />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/burnedLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:padding="5dp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cardLayout"
+                    android:background="@drawable/border_background"
+                    >
+
+                        <TextView
+                            style="@style/TitleSmallGameType"
+                            android:id="@+id/burnedTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toTopOf="@id/card1Discarded"
+                            android:text="@string/burned_cards"
+                            />
+
+                        <ImageView
+                            android:id="@+id/card1Discarded"
+                            android:layout_width="65dp"
+                            android:layout_height="85dp"
+                            android:background="@drawable/card_selected"
+                            android:src="@drawable/card_back_default"
+                            android:contentDescription="@string/poker_card_placeholder"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/card2Discarded"
+                            app:layout_constraintTop_toBottomOf="@id/burnedTitle"
+                            />
+
+                        <ImageView
+                            android:id="@+id/card2Discarded"
+                            android:layout_width="65dp"
+                            android:layout_height="85dp"
+                            android:background="@drawable/card_selected"
+                            android:src="@drawable/card_back_default"
+                            android:contentDescription="@string/poker_card_placeholder"
+                            app:layout_constraintStart_toEndOf="@id/card1Discarded"
+                            app:layout_constraintTop_toBottomOf="@id/burnedTitle"
+                            />
+
+                        <ImageView
+                            android:id="@+id/card3Discarded"
+                            android:layout_width="65dp"
+                            android:layout_height="85dp"
+                            android:background="@drawable/card_selected"
+                            android:src="@drawable/card_back_default"
+                            android:contentDescription="@string/poker_card_placeholder"
+                            app:layout_constraintStart_toEndOf="@id/card2Discarded"
+                            app:layout_constraintTop_toBottomOf="@id/burnedTitle"
+                            />
+
+                        <ImageView
+                            android:id="@+id/card4Discarded"
+                            android:layout_width="65dp"
+                            android:layout_height="85dp"
+                            android:background="@drawable/card_selected"
+                            android:src="@drawable/card_back_default"
+                            android:contentDescription="@string/poker_card_placeholder"
+                            app:layout_constraintStart_toEndOf="@id/card3Discarded"
+                            app:layout_constraintTop_toBottomOf="@id/burnedTitle"
+                            />
+
+                        <ImageView
+                            android:id="@+id/card5Discarded"
+                            android:layout_width="65dp"
+                            android:layout_height="85dp"
+                            android:background="@drawable/card_selected"
+                            android:src="@drawable/card_back_default"
+                            android:contentDescription="@string/poker_card_placeholder"
+                            app:layout_constraintStart_toEndOf="@id/card4Discarded"
+                            app:layout_constraintTop_toBottomOf="@id/burnedTitle"
+                            />
+
+                        <ImageView
+                            android:id="@+id/closeDiscarded"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_cancel_icon"
+                            android:contentDescription="@string/poker_card_placeholder"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/recycler"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/buttons"
+                    app:layout_constraintTop_toBottomOf="@id/burnedLayout" />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/recycler"
+                    app:layout_constraintBottom_toTopOf="@id/ad_view_container">
+
+                        <Button
+                            android:id="@+id/reset"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/reset_button"
+                            app:layout_constraintEnd_toStartOf="@id/burn"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent" />
+
+                        <Button
+                            android:id="@+id/burn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/burn_button"
+                            app:layout_constraintStart_toEndOf="@id/reset"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent" />
+
+                        <Button
+                            android:id="@+id/plus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/add_player_button"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/burn"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <FrameLayout
+                    android:id="@+id/ad_view_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentBottom="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

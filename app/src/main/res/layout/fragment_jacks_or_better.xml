@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pullToRefresh"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toTopOf="@id/buttons"
+    app:layout_constraintTop_toBottomOf="@id/burnedLayout"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/red_felt_background" >
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/border_background"
+            >
+
+            <TextView
+                style="@style/TitleSmallGameType"
+                android:id="@+id/communityTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/card1"
+                android:text="@string/tap_to_change" />
+
+            <ImageView
+                android:id="@+id/card1"
+                android:layout_width="70dp"
+                android:layout_height="95dp"
+                android:background="@drawable/card_selected"
+                android:contentDescription="@string/poker_card_placeholder"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/card2"
+                app:layout_constraintTop_toBottomOf="@id/communityTitle"
+                app:layout_constraintBottom_toTopOf="@id/holdTip"
+                />
+
+            <ImageView
+                android:id="@+id/card2"
+                android:layout_width="70dp"
+                android:layout_height="95dp"
+                android:background="@drawable/card_selected"
+                android:contentDescription="@string/poker_card_placeholder"
+                app:layout_constraintStart_toEndOf="@id/card1"
+                app:layout_constraintTop_toBottomOf="@id/communityTitle"
+                app:layout_constraintBottom_toTopOf="@id/holdTip"
+                />
+
+            <ImageView
+                android:id="@+id/card3"
+                android:layout_width="70dp"
+                android:layout_height="95dp"
+                android:background="@drawable/card_selected"
+                android:contentDescription="@string/poker_card_placeholder"
+                app:layout_constraintStart_toEndOf="@id/card2"
+                app:layout_constraintTop_toBottomOf="@id/communityTitle"
+                app:layout_constraintBottom_toTopOf="@id/holdTip"
+                />
+
+            <ImageView
+                android:id="@+id/card4"
+                android:layout_width="70dp"
+                android:layout_height="95dp"
+                android:background="@drawable/card_selected"
+                android:contentDescription="@string/poker_card_placeholder"
+                app:layout_constraintStart_toEndOf="@id/card3"
+                app:layout_constraintTop_toBottomOf="@id/communityTitle"
+                app:layout_constraintBottom_toTopOf="@id/holdTip"
+                />
+
+            <ImageView
+                android:id="@+id/card5"
+                android:layout_width="70dp"
+                android:layout_height="95dp"
+                android:background="@drawable/card_selected"
+                android:contentDescription="@string/poker_card_placeholder"
+                app:layout_constraintStart_toEndOf="@id/card4"
+                app:layout_constraintTop_toBottomOf="@id/communityTitle"
+                app:layout_constraintBottom_toTopOf="@id/holdTip"
+                />
+
+            <TextView
+                style="@style/TipText"
+                android:id="@+id/holdTip"
+                android:text="@string/long_press_to_hold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@+id/cardLayout"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+
+            <TextView
+                android:text="@string/hold"
+                android:id="@+id/hold1"
+                style="@style/HoldTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@+id/card1"
+                app:layout_constraintStart_toStartOf="@id/card1"
+                app:layout_constraintTop_toTopOf="@id/card1" />
+
+            <TextView
+                android:text="@string/hold"
+                android:id="@+id/hold2"
+                style="@style/HoldTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@+id/card2"
+                app:layout_constraintStart_toStartOf="@id/card2"
+                app:layout_constraintTop_toTopOf="@id/card2" />
+
+            <TextView
+                android:text="@string/hold"
+                android:id="@+id/hold3"
+                style="@style/HoldTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@+id/card3"
+                app:layout_constraintStart_toStartOf="@id/card3"
+                app:layout_constraintTop_toTopOf="@id/card3" />
+
+            <TextView
+                android:text="@string/hold"
+                android:id="@+id/hold4"
+                style="@style/HoldTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@+id/card4"
+                app:layout_constraintStart_toStartOf="@id/card4"
+                app:layout_constraintTop_toTopOf="@id/card4" />
+
+            <TextView
+                android:text="@string/hold"
+                android:id="@+id/hold5"
+                style="@style/HoldTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@+id/card5"
+                app:layout_constraintStart_toStartOf="@id/card5"
+                app:layout_constraintTop_toTopOf="@id/card5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/stats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardLayout"
+            android:background="@drawable/border_background" >
+
+            <TextView
+                style="@style/JacksMediumText"
+                android:id="@+id/expectedPayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/chevronStats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_chevron_right"
+                app:layout_constraintStart_toEndOf="@id/expectedPayout"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/jacksorBetterAdLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardLayout">
+
+        <ImageView
+            android:id="@+id/jacksTrainerImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:foregroundGravity="center"
+            android:src="@drawable/jacks_ad_round"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+
+        <TextView
+            style="@style/JacksAd"
+            android:id="@+id/jacksTrainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jacks_ad"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/jacksTrainerImage"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/moneylayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/stats"
+            android:background="@drawable/border_background">
+
+            <TextView
+                style="@style/JacksMediumText"
+                android:id="@+id/paytable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <TextView
+                style="@style/JacksMediumText"
+                android:id="@+id/bet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/paytable"
+                />
+
+            <ImageView
+                android:id="@+id/chevronPaytable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_chevron_right"
+                app:layout_constraintStart_toEndOf="@id/paytable"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/statStatsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/moneylayout"
+            android:background="@drawable/border_background"
+            >
+
+            <TextView
+                style="@style/TipText"
+                android:id="@+id/handsEvaluated"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <TextView
+                style="@style/TipText"
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/handsEvaluated"
+                />
+
+            <TextView
+                style="@style/TipText"
+                android:id="@+id/pullDownTip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pull_down_refresh"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/time"
+                />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:visibility="invisible"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/ad_view_container"
+            >
+
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/reset_button"
+                app:layout_constraintEnd_toStartOf="@id/clearHolds"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <Button
+                android:id="@+id/clearHolds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/remove_holds_button"
+                app:layout_constraintStart_toEndOf="@id/reset"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <Button
+                android:id="@+id/bestHold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/best_holds_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/clearHolds"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <FrameLayout
+            android:id="@+id/ad_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

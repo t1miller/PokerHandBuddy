@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">Poker Hand Buddy</string>
+    <string name="tab_texas_holdem">Texas Hold\'em</string>
+    <string name="tab_jack_or_better">Jacks or Better</string>
+    <string name="tab_deuces_wild">Deuces Wild</string>
+    <string name="tab_todo">Whats Next?</string>
+    <string name="pull_down_refresh">Pull down to refresh</string>
+
+    <!-- Texas Holdem -->
+    <string name="community_cards">Community Cards</string>
+    <string name="burned_cards">Discarded Cards</string>
+    <string name="poker_card_placeholder">Poker Card</string>
+    <string name="add_player_button">Add Player</string>
+    <string name="reset_button">Reset</string>
+    <string name="burn_button">Burn</string>
+
+    <string name="win">Win: %.2f%%</string>
+    <string name="equity">Equity: %.2f%%</string>
+    <string name="tie">Tie: %.2f%%</string>
+
+    <!-- Jacks or Better -->
+    <string name="draw">Draw</string>
+    <string name="hold">Hold</string>
+    <string name="tap_to_change">Tap to change card</string>
+    <string name="long_press_to_hold">Long press to hold</string>
+    <string name="change_in_settings">Tap me to change</string>
+    <string name="expected_payout">Expected Payout: $%.2f</string>
+    <string name="bet">Bet: $%d</string>
+    <string name="paytable">Paytable: %s</string>
+    <string name="jacks_ad">Download Jacks Or Better\nw/ training mode</string>
+    <string name="time">Time: %.1f seconds</string>
+    <string name="hands_evaluated">Hands Evaluated: %d</string>
+    <string name="expected_value">Expected: $%.2f</string>
+    <string name="tap_me">Tap me</string>
+    <string name="remove_holds_button">Remove Holds</string>
+    <string name="best_holds_button">Best Holds</string>
+
+    <!-- Deuces Wild -->
+    <string name="deuces_ad">Download Deuces Wild\nw/ training mode</string>
+
+    <!-- Whats Next -->
+    <string name="whats_next">Whats Next?</string>
+    <string name="whats_next_desc">- Omaha\n- Let it Ride\n- More Video Poker Variants</string>
+    <string name="feedback_next">Have a suggestion? I would love to hear, you can send me an email.</string>
+
+    <!-- Settings -->
+    <string name="money">Money</string>
+    <string name="general">General</string>
+    <string name="about">About</string>
+    <string name="settings">Settings</string>
+    <string name="montecarlo_texasholdem">Texas Hold\'em Accuracy</string>
+    <string name="payout_table_title">Paytable</string>
+    <string name="bet_jacks_title">Bet</string>
+    <string name="bet_jacks_summary">Change bet used in simulations</string>
+    <string name="texas_holdem_threads_title">Threads</string>
+    <string name="texas_holdem_threads_desc">Number of threads for evaluation algorithm</string>
+    <string name="texas_holdem_max_time_desc">Max amount of seconds to take per evaluation (A little goes a long way)</string>
+    <string name="texas_holdem_max_time_title">Cutoff Time </string>
+    <string name="jacks_trials_title">Accuracy</string>
+    <string name="jacks_trials_desc">This increases the number of monte carlo trials, which improves accuracy</string>
+
+
+    <!-- About -->
+    <string name="about_holdem">Holdem is a fun game. Fun Fun Fun!</string>
+    <string name="other_apps">My Other Apps:</string>
+    <string name="about_feedback_title">Feedback:</string>
+    <string name="about_feedback">Found a bug? Have a cool idea? Want a new statistic feature? Email me, I love feedback/suggestions!</string>
+    <string name="email_me">Email Me</string>
+    <string name="evaluator">Evaluator</string>
+    <string name="holdem_evaluator">The evaluator is written in C++ and is extremely fast. It utilizes Cactus Kev\'s the algorithm with Paul Senzee\'s perfect has technique enabling state of the art speeds. You can configure it in the settings.</string>
+    <string name="jacks_evaluator">The evaluator is very fast and utilizes the same techniques above. Also configurable in the settings.</string>
+    <string name="jacks_about">A popular video poker game.</string>
+    <string name="deuces_about">Another popular video poker game. Very similar to jacks or better but 2\'s are wild causing the hands to also be different.</string>
+    <string name="deuces_evaluator">Because 2\'s are wild, this enables a lot of possible hands and this evaluator isn\'t quite as fast. You can configure it in the settings to be more accurate.</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

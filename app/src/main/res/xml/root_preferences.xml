@@ -1,0 +1,94 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/general">
+
+        <Preference
+            android:title="Choose Cardback"
+            android:key="choose_cardback"
+            android:summary="Resets your statistics"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/tab_texas_holdem">
+
+        <SeekBarPreference
+            android:max="10"
+            app:defaultValue="3"
+            app:key="texas_holdem_max_time"
+            app:min="1"
+            app:showSeekBarValue="true"
+            app:summary="@string/texas_holdem_max_time_desc"
+            app:title="@string/texas_holdem_max_time_title" />
+
+        <SeekBarPreference
+            android:max="4"
+            app:defaultValue="2"
+            app:key="texas_holdem_threads"
+            app:min="1"
+            app:showSeekBarValue="true"
+            app:summary="@string/texas_holdem_threads_desc"
+            app:title="@string/texas_holdem_threads_title" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/tab_jack_or_better">
+
+        <SeekBarPreference
+            android:max="50000"
+            app:defaultValue="13000"
+            app:key="jacks_trials"
+            app:min="4000"
+            app:summary="@string/jacks_trials_desc"
+            app:title="@string/jacks_trials_title" />
+
+        <ListPreference
+            app:defaultValue="99.54% - 9/6"
+            app:entries="@array/payout_table_type_entries"
+            app:entryValues="@array/payout_table_type_entries"
+            app:key="payout_table_jacks"
+            app:title="@string/payout_table_title"
+            app:useSimpleSummaryProvider="true" />
+
+        <SeekBarPreference
+            android:max="5"
+            app:defaultValue="5"
+            app:key="bet_jacks"
+            app:min="1"
+            app:showSeekBarValue="true"
+            app:summary="@string/bet_jacks_summary"
+            app:title="@string/bet_jacks_title" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/tab_deuces_wild">
+
+        <SeekBarPreference
+            android:max="50000"
+            app:defaultValue="13000"
+            app:key="deuces_trials"
+            app:min="4000"
+            app:summary="@string/jacks_trials_desc"
+            app:title="@string/jacks_trials_title" />
+
+        <ListPreference
+            app:defaultValue="100.76% Full Pay"
+            app:entries="@array/payout_table_type_entries_deuces"
+            app:entryValues="@array/payout_table_type_entries_deuces"
+            app:key="payout_table_deuces"
+            app:title="@string/payout_table_title"
+            app:useSimpleSummaryProvider="true" />
+
+        <SeekBarPreference
+            android:max="5"
+            app:defaultValue="5"
+            app:key="bet_deuces"
+            app:min="1"
+            app:showSeekBarValue="true"
+            app:summary="@string/bet_jacks_summary"
+            app:title="@string/bet_jacks_title" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
