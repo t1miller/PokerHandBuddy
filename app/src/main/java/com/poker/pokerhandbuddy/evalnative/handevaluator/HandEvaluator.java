@@ -1,4 +1,4 @@
-package com.poker.pokerhandbuddy.handevaluator;
+package com.poker.pokerhandbuddy.evalnative.handevaluator;
 
 /**
  * Given five PokerCards calculates the value of the hand.

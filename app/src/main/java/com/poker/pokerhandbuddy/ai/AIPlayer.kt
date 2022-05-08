@@ -4,7 +4,7 @@ import android.content.Context
 import com.poker.pokerhandbuddy.cardgame.Card
 import com.poker.pokerhandbuddy.cardgame.Deck
 import com.poker.pokerhandbuddy.cardgame.Evaluate
-import com.poker.pokerhandbuddy.handevaluator.*
+import com.poker.pokerhandbuddy.evalnative.handevaluator.*
 import com.poker.pokerhandbuddy.payout.PayoutCalculator
 import timber.log.Timber
 

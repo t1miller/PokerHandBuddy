@@ -1,4 +1,4 @@
-package com.poker.pokerhandbuddy.handevaluator;
+package com.poker.pokerhandbuddy.evalnative.handevaluator;
 
 /**
  * Keeps track of suits as needed by the rest of the algorithm.

@@ -1,4 +1,4 @@
-package com.poker.pokerhandbuddy.handevaluator;
+package com.poker.pokerhandbuddy.evalnative.handevaluator;
 
 public class Primes {
 	private static int[] values_;

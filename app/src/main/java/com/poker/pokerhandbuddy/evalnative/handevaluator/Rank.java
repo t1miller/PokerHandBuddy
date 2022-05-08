@@ -1,4 +1,4 @@
-package com.poker.pokerhandbuddy.handevaluator;
+package com.poker.pokerhandbuddy.evalnative.handevaluator;
 
 /**
  * Convenience class to hold ranks and convert easily.

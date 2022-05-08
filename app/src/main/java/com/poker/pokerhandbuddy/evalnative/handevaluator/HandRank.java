@@ -1,4 +1,4 @@
-package com.poker.pokerhandbuddy.handevaluator;
+package com.poker.pokerhandbuddy.evalnative.handevaluator;
 
 /**
  * Easy handle for the ranking of the cards.
