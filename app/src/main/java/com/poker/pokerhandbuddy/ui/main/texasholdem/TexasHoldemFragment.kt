@@ -1,16 +1,11 @@
 package com.poker.pokerhandbuddy.ui.main.texasholdem
 
-import android.app.Activity
 import android.app.Dialog
-import android.content.Context
 import android.os.Bundle
-import android.util.DisplayMetrics
-import android.view.Display
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.FrameLayout
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
@@ -20,23 +15,14 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.AdSize
-import com.google.android.gms.ads.AdView
-import com.google.android.gms.ads.MobileAds
 import com.poker.pokerhandbuddy.PokerApplication
 import com.poker.pokerhandbuddy.R
 import com.poker.pokerhandbuddy.ai.AIPlayer
 import com.poker.pokerhandbuddy.cardgame.AdHelper
 import com.poker.pokerhandbuddy.cardgame.Card
 import com.poker.pokerhandbuddy.cardgame.CardSelectionDialog
-import com.poker.pokerhandbuddy.cardgame.CardUiUtils
-import com.poker.pokerhandbuddy.ui.main.MainViewModel
 import timber.log.Timber
 
-
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
 
 /**
@@ -45,9 +31,6 @@ private const val ARG_PARAM2 = "param2"
  * create an instance of this fragment.
  */
 class TexasHoldemFragment : Fragment(), TexasHoldemAdapter.ItemTouched, CardSelectionDialog.CardTouched {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
 
     private var mItems = TexasHoldemAdapter.DEFAULT_ITEMS
     private var tapOrigin = Tap(TapOrigin.CARD_1, 0)
@@ -72,13 +55,6 @@ class TexasHoldemFragment : Fragment(), TexasHoldemAdapter.ItemTouched, CardSele
             val index: Int
     )
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
 
     override fun onCreateView(
             inflater: LayoutInflater, container: ViewGroup?,
@@ -162,9 +138,7 @@ class TexasHoldemFragment : Fragment(), TexasHoldemAdapter.ItemTouched, CardSele
             adapter = mAdapter
         }
 
-
         AdHelper.setupAd(requireActivity(),view, "ca-app-pub-7137320034166109/8320773103")
-
         return view
     }
 
@@ -219,13 +193,7 @@ class TexasHoldemFragment : Fragment(), TexasHoldemAdapter.ItemTouched, CardSele
     companion object {
 
         @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            TexasHoldemFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+        fun newInstance() = TexasHoldemFragment()
     }
 
     override fun card1(index: Int) {

@@ -13,15 +13,11 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.AdView
 import com.poker.pokerhandbuddy.ui.main.handstatui.StatDialogUtils
 import com.poker.pokerhandbuddy.R
 import com.poker.pokerhandbuddy.cardgame.*
 import com.poker.pokerhandbuddy.settings.SettingsActivity
-import com.poker.pokerhandbuddy.settings.SettingsUtils
 import com.poker.pokerhandbuddy.ui.main.texasholdem.TexasHoldemFragment
-import com.poker.pokerhandbuddy.ui.main.MainViewModel
 
 /**
  * A simple [Fragment] subclass.

@@ -173,6 +173,13 @@
                     android:layout_margin="5dp"
                     app:srcCompat="@drawable/deuces_ad" />
 
+                <ImageView
+                    android:id="@+id/letItRide"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    app:srcCompat="@drawable/let_it_ride_icon" />
+
             </LinearLayout>
 
             <TextView

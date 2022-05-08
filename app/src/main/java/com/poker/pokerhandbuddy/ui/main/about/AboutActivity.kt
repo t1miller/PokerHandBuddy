@@ -28,6 +28,12 @@ class AboutActivity : AppCompatActivity() {
             loadDeucesPlaystore()
         }
 
+        val letItRide = findViewById<ImageView>(R.id.letItRide)
+        letItRide.setOnClickListener {
+            loadLetItRidePlaystore()
+        }
+
+
     }
 
     private fun sendEmail() {
@@ -52,6 +58,15 @@ class AboutActivity : AppCompatActivity() {
         val intent = Intent(Intent.ACTION_VIEW).apply {
             data = Uri.parse(
                 "https://play.google.com/store/apps/details?id=com.poker.deuceswild")
+            setPackage("com.android.vending")
+        }
+        startActivity(intent)
+    }
+
+    private fun loadLetItRidePlaystore() {
+        val intent = Intent(Intent.ACTION_VIEW).apply {
+            data = Uri.parse(
+                "https://play.google.com/store/apps/details?id=com.poker.letitride")
             setPackage("com.android.vending")
         }
         startActivity(intent)

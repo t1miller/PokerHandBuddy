@@ -1,7 +1,6 @@
 package com.poker.pokerhandbuddy.payout
 
 import android.content.Context
-import com.poker.pokerhandbuddy.cardgame.Evaluate
 import com.poker.pokerhandbuddy.settings.SettingsUtils
 
 object PayoutCalculator {

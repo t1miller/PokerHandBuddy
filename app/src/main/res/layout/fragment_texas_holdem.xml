@@ -116,8 +116,7 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintBottom_toTopOf="@id/card1Discarded"
-                            android:text="@string/burned_cards"
-                            />
+                            android:text="@string/burned_cards" />
 
                         <ImageView
                             android:id="@+id/card1Discarded"

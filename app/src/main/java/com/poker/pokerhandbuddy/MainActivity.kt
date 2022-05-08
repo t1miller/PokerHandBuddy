@@ -10,9 +10,9 @@ import androidx.appcompat.widget.Toolbar
 import androidx.viewpager.widget.ViewPager
 import com.google.android.gms.ads.MobileAds
 import com.google.android.material.tabs.TabLayout
-import com.poker.pokerhandbuddy.ui.main.about.AboutActivity
 import com.poker.pokerhandbuddy.settings.SettingsActivity
 import com.poker.pokerhandbuddy.ui.main.SectionsPagerAdapter
+import com.poker.pokerhandbuddy.ui.main.about.AboutActivity
 
 
 class MainActivity : AppCompatActivity() {

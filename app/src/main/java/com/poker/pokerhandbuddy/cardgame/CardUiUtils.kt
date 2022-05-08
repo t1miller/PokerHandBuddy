@@ -311,6 +311,5 @@ object CardUiUtils {
                 SettingsUtils.getCardBack(PokerApplication.applicationContext())
             }
         }
-
     }
 }

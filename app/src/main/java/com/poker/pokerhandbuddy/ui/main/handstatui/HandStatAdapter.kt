@@ -10,7 +10,6 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.poker.pokerhandbuddy.R
 import com.poker.pokerhandbuddy.cardgame.Card
-import com.poker.pokerhandbuddy.cardgame.CardUiUtils
 import com.poker.pokerhandbuddy.ui.main.handstatui.HandStat
 
 

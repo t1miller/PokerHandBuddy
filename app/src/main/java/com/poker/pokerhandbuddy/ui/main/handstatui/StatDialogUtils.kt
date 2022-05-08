@@ -14,7 +14,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.poker.jacksorbetter.handstatui.HandStatAdapter
 import com.poker.pokerhandbuddy.R
 import com.poker.pokerhandbuddy.cardgame.Card
-import com.poker.pokerhandbuddy.cardgame.CardUiUtils
 import com.poker.pokerhandbuddy.ai.AIPlayer
 import timber.log.Timber
 

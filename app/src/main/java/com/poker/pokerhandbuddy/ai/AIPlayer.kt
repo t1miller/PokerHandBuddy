@@ -154,12 +154,3 @@ object AIPlayer {
         else -> drop(1).powerset().let { it + it.map { it + first() } }
     }
 }
-
-// instead of checking if pair is jacks or better
-// just apply probability of pair being jacks or better 4/13
-//val r = Random.nextDouble()
-//if(r < .3){
-//    PayoutCalculator.Evaluate.JACKS_OR_BETTER_PAIR
-//} else {
-//    PayoutCalculator.Evaluate.NOTHING
-//}

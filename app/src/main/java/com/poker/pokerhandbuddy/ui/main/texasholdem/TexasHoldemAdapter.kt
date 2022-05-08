@@ -10,7 +10,6 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.poker.pokerhandbuddy.R
 import com.poker.pokerhandbuddy.cardgame.Card
-import com.poker.pokerhandbuddy.cardgame.CardUiUtils
 
 
 data class HoldemPlayer(

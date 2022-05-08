@@ -27,15 +27,6 @@ Java_com_poker_pokerhandbuddy_evalnative_EvalNativeBridge_testJacksJNI(
     std::string hello = "Hello from C++";
 
 
-
-
-
-
-
-
-
-
-
     __android_log_print(ANDROID_LOG_ERROR, "test","testJacksJni()");
 
     return env->NewStringUTF(hello.c_str());

@@ -26,11 +26,11 @@ class SectionsPagerAdapter(private val context: Context, fm: FragmentManager)
 
     override fun getItem(position: Int): Fragment {
         return when(position){
-            0 -> TexasHoldemFragment.newInstance("blah","blah")
+            0 -> TexasHoldemFragment.newInstance()
             1 -> JacksOrBetterFragment.newInstance()
             2 -> DeucesWildFragment.newInstance()
             3 -> TodoFragment.newInstance()
-            else -> TexasHoldemFragment.newInstance("blah","blah")
+            else -> TexasHoldemFragment.newInstance()
         }
     }
 

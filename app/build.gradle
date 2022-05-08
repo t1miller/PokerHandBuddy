@@ -10,8 +10,8 @@ android {
         applicationId "com.poker.pokerhandbuddy"
         minSdkVersion 17
         targetSdkVersion 29
-        versionCode 1
-        versionName "1.0"
+        versionCode 3
+        versionName "1.2"
         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -51,7 +51,7 @@ dependencies {
     implementation 'com.google.guava:guava:30.1.1-android'
     implementation "androidx.multidex:multidex:2.0.1"
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
-    implementation 'com.google.android.gms:play-services-ads:19.8.0'
+    implementation 'com.google.android.gms:play-services-ads:20.0.0'
 
 
     testImplementation 'junit:junit:4.13.2'
